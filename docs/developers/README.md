@@ -2,6 +2,8 @@
 
 This guide provides information for developers working on the Virtual Bet Simulator project.
 
+Version: 1.1.0 (Latest)
+
 ## 📋 Table of Contents
 
 - [Getting Started](#getting-started)
@@ -25,8 +27,8 @@ This guide provides information for developers working on the Virtual Bet Simula
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/virtual-bet-simulator.git
-   cd virtual-bet-simulator
+   git clone https://github.com/hpkushal/Risk-Reward-Simulator.git
+   cd Risk-Reward-Simulator
    ```
 
 2. Install dependencies:

@@ -1,6 +1,7 @@
 # Virtual Bet Simulator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-1.1.0-green.svg)](https://github.com/hpkushal/Risk-Reward-Simulator/releases)
 
 A browser-based gambling simulation platform that provides a risk-free environment for experiencing betting mechanics without real money. The simulator starts users with $1,000 in virtual currency and challenges them to reach $10,000 while avoiding bankruptcy.
 
@@ -60,8 +61,8 @@ A browser-based gambling simulation platform that provides a risk-free environme
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/virtual-bet-simulator.git
-   cd virtual-bet-simulator
+   git clone https://github.com/hpkushal/Risk-Reward-Simulator.git
+   cd Risk-Reward-Simulator
    ```
 
 2. Install dependencies:

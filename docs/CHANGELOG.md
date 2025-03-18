@@ -55,4 +55,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Project initialization
 - Basic React setup with TypeScript
 - Initial UI design concepts
-- Core betting mechanics prototype 
+- Core betting mechanics prototype
+
+## [1.1.0] - 2024-03-18
+
+### Added
+- Initial GitHub repository setup at https://github.com/hpkushal/Risk-Reward-Simulator.git
+- Complete project structure with React components and TypeScript
+- Comprehensive documentation including developer guide and product specifications
+
+### Changed
+- Updated project dependencies to latest versions
+- Enhanced documentation with detailed component descriptions
+- Improved code organization and structure 
