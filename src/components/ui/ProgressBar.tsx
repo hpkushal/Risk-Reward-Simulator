@@ -1,6 +1,6 @@
 import React from 'react';
-import { useGame } from '../context/GameContext';
-import { useTheme } from '../context/ThemeContext';
+import { useGame } from '../../context/GameContext';
+import { useTheme } from '../../context/ThemeContext';
 
 const ProgressBar: React.FC = () => {
   const { balance } = useGame();

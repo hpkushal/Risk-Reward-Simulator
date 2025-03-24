@@ -1,11 +1,11 @@
 import React, { useState, useCallback } from 'react';
 import { useGame } from '../context/GameContext';
-import Layout from '../components/Layout';
-import BetOptions from '../components/BetOptions';
-import BetHistory from '../components/BetHistory';
-import ProgressBar from '../components/ProgressBar';
-import PersonaCard from '../components/PersonaCard';
-import BetForm from '../components/BetForm';
+import Layout from '../components/layout/Layout';
+import BetOptions from '../components/betting/BetOptions';
+import BetHistory from '../components/betting/BetHistory';
+import ProgressBar from '../components/ui/ProgressBar';
+import PersonaCard from '../components/common/PersonaCard';
+import BetForm from '../components/betting/BetForm';
 
 const Dashboard: React.FC = () => {
   // We need the gameState for future functionality, but it's not used directly in the render

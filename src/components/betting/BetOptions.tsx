@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useGame, BetEvent } from '../context/GameContext';
-import { useTheme } from '../context/ThemeContext';
+import { useGame, BetEvent } from '../../context/GameContext';
+import { useTheme } from '../../context/ThemeContext';
 
 interface BetOptionsProps {
   onSelectEvent?: (id: string) => void;
@@ -100,7 +100,7 @@ const BetOptions: React.FC<BetOptionsProps> = ({ onSelectEvent }) => {
     <div className={isDarkMode ? '' : 'bg-white p-4 rounded-lg shadow-md'}>
       <h2 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Bet Options</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {betEvents.map(event => (
+        {betEvents.map((event: BetEvent) => (
           <BetOption 
             key={event.id} 
             event={event} 

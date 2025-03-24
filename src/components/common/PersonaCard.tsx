@@ -1,6 +1,6 @@
 import React from 'react';
-import { useGame } from '../context/GameContext';
-import { useTheme } from '../context/ThemeContext';
+import { useGame } from '../../context/GameContext';
+import { useTheme } from '../../context/ThemeContext';
 
 const PersonaCard: React.FC = () => {
   const { currentPersona, balance, currentRisk, resetGame, gameState } = useGame();
@@ -117,7 +117,7 @@ const PersonaCard: React.FC = () => {
         <div className="flex justify-between items-center">
           <span className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Personality</span>
           <div className="flex gap-1">
-            {currentPersona.traits.map((trait, index) => (
+            {currentPersona.traits.map((trait: string, index: number) => (
               <span 
                 key={index}
                 className={`text-xs px-1 py-0.5 rounded ${

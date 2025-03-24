@@ -1,7 +1,7 @@
 # Virtual Bet Simulator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.1.0-green.svg)](https://github.com/hpkushal/Risk-Reward-Simulator/releases)
+[![Version](https://img.shields.io/badge/version-1.2.0-green.svg)](https://github.com/hpkushal/Risk-Reward-Simulator/releases)
 
 A browser-based gambling simulation platform that provides a risk-free environment for experiencing betting mechanics without real money. The simulator starts users with $1,000 in virtual currency and challenges them to reach $10,000 while avoiding bankruptcy.
 
@@ -19,6 +19,7 @@ A browser-based gambling simulation platform that provides a risk-free environme
   - [Risk Calculation](#risk-calculation)
   - [Personas](#personas)
   - [Betting Events](#betting-events)
+  - [Analytics Features](#analytics-features)
 - [Architecture](#architecture)
   - [Tech Stack](#tech-stack)
   - [Project Structure](#project-structure)
@@ -41,6 +42,14 @@ A browser-based gambling simulation platform that provides a risk-free environme
   - Roulette: 35.0x, ~2.7% win chance
   - Stock Market: 10.0x, 10% win chance
   - Lottery: 1000.0x, 0.1% win chance
+- **Comprehensive Analytics Dashboard**:
+  - Behavioral Analysis: Understand your betting habits
+  - Financial Metrics: Track your performance over time
+  - Betting Patterns: Visualize trends in your betting behavior
+  - Pattern Recognition: Identify potentially harmful gambling patterns
+  - Predictive Analytics: See projections of future outcomes
+  - Comparative Analytics: Benchmark against responsible gambling standards
+  - Goal Setting: Set and track responsible gambling targets
 - **Responsive Design** - Optimized for desktop and mobile devices
 - **Theme Support** - Light and dark mode options
 - **Results History** - Comprehensive tracking of your betting activities
@@ -105,6 +114,7 @@ The compiled assets will be available in the `build` directory.
 5. Track your progress toward the $10,000 goal
 6. Adapt your strategy based on your risk level
 7. Try to avoid bankruptcy!
+8. Analyze your betting patterns and set responsible gambling goals
 
 ### Risk Calculation
 
@@ -142,6 +152,17 @@ Your risk level determines which persona you embody:
 | Stock Market | 10.0x | 10% | Medium | $200 |
 | Lottery | 1000.0x | 0.1% | High | $1 |
 
+### Analytics Features
+
+The Analytics dashboard includes several features to help you understand your betting behavior:
+
+- **Pattern Recognition** - Detects problematic patterns such as chasing losses, high-risk betting, and rapid betting frequency
+- **Predictive Analytics** - Projects future outcomes based on your current betting patterns
+- **Goal Setting** - Set personalized responsible gambling goals and track your progress
+- **Comparative Analytics** - Compare your behavior to responsible gambling benchmarks
+- **Behavioral Analysis** - Analyzes your betting habits including time patterns and risk preferences
+- **Financial Metrics** - Tracks your wins, losses, and overall financial performance
+
 ## 🏗️ Architecture
 
 ### Tech Stack
@@ -158,9 +179,19 @@ virtual-bet-simulator/
 ├── public/               # Static assets
 ├── src/                  # Source files
 │   ├── components/       # Reusable UI components
+│   │   ├── analytics/    # Analytics-related components
+│   │   ├── betting/      # Betting-related components
+│   │   ├── common/       # Common/shared components
+│   │   ├── layout/       # Layout components
+│   │   └── ui/           # UI primitive components
 │   ├── context/          # React Context providers
 │   ├── pages/            # Page components
 │   └── utils/            # Utility functions
+│       ├── betting.ts    # Betting-related calculations
+│       ├── constants.ts  # Application constants
+│       ├── formatter.ts  # Formatting utilities
+│       ├── index.ts      # Utility exports
+│       └── validation.ts # Form validation utilities
 ├── docs/                 # Documentation
 └── README.md             # Project overview
 ```

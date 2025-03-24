@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { BetEvent } from '../context/GameContext';
-import { useGame } from '../context/GameContext';
+import { BetEvent } from '../../context/GameContext';
+import { useGame } from '../../context/GameContext';
 
 interface BetCardProps {
   event: BetEvent;

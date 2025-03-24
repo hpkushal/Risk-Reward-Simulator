@@ -1,6 +1,6 @@
 import React from 'react';
-import { useGame } from '../context/GameContext';
-import { useTheme } from '../context/ThemeContext';
+import { useGame } from '../../context/GameContext';
+import { useTheme } from '../../context/ThemeContext';
 
 const ResetButton: React.FC = () => {
   const { resetGame, gameState } = useGame();

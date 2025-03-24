@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useGame } from '../context/GameContext';
-import { useTheme } from '../context/ThemeContext';
+import { useGame } from '../../context/GameContext';
+import { useTheme } from '../../context/ThemeContext';
+import RiskMeter from '../ui/RiskMeter';
 
 // Funny comments based on outcome and bet type
 const funnyComments = {
@@ -102,13 +103,13 @@ const BetForm: React.FC<BetFormProps> = ({ selectedEventId }) => {
   
   // Update selected event when prop changes
   useEffect(() => {
-    if (selectedEventId && betEvents.some(event => event.id === selectedEventId)) {
+    if (selectedEventId && betEvents.some((event: { id: string }) => event.id === selectedEventId)) {
       setSelectedEvent(selectedEventId);
     }
   }, [selectedEventId, betEvents]);
   
   // Get the current selected event details
-  const currentEvent = betEvents.find(event => event.id === selectedEvent) || betEvents[0];
+  const currentEvent = betEvents.find((event: { id: string }) => event.id === selectedEvent) || betEvents[0];
   
   // Quick bet button values
   const quickBets = [10, 20, 50, 100, 500];
@@ -162,7 +163,7 @@ const BetForm: React.FC<BetFormProps> = ({ selectedEventId }) => {
       return;
     }
     
-    const event = betEvents.find(e => e.id === selectedEvent);
+    const event = betEvents.find((e: { id: string }) => e.id === selectedEvent);
     if (!event) {
       setBetResult({
         success: false,

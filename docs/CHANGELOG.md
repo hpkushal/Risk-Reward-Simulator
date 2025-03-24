@@ -5,7 +5,48 @@ All notable changes to the Virtual Bet Simulator project will be documented in t
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2023-03-18
+## [1.2.0] - 2024-03-24
+
+### Added
+- Analytics page with comprehensive betting analysis
+- Pattern Recognition component to detect problematic betting patterns
+- Predictive Analytics component for forecasting betting outcomes
+- Comparative Analytics for benchmarking against responsible gambling standards
+- Goal Setting component for responsible gambling targets
+- Guided Tour for analytics features
+- New utility modules in `src/utils/`:
+  - `formatter.ts` for consistent value formatting
+  - `validation.ts` for form field validation
+  - `betting.ts` for betting calculations
+  - `constants.ts` for application-wide constants
+
+### Changed
+- Restructured project folders for better organization:
+  - Components organized into logical categories (analytics, betting, common, layout, ui)
+  - Utilities extracted into dedicated files
+  - Improved code reusability through shared components
+- Enhanced TypeScript type safety with proper interfaces and type annotations
+- Updated documentation to reflect new architecture and features
+- Improved dark mode support across all components
+
+### Fixed
+- TypeScript implicit 'any' type errors in various components
+- Import path issues after folder restructuring
+- Styling inconsistencies between light and dark themes
+
+## [1.1.0] - 2024-03-18
+
+### Added
+- Initial GitHub repository setup at https://github.com/hpkushal/Risk-Reward-Simulator.git
+- Complete project structure with React components and TypeScript
+- Comprehensive documentation including developer guide and product specifications
+
+### Changed
+- Updated project dependencies to latest versions
+- Enhanced documentation with detailed component descriptions
+- Improved code organization and structure
+
+## [1.0.0] - 2024-03-18
 
 ### Added
 - Initial release of the Virtual Bet Simulator
@@ -24,7 +65,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Context API for state management
 - Custom hooks for theme, sound, and game logic
 
-## [0.3.0] - 2023-03-10
+## [0.3.0] - 2024-03-10
 
 ### Added
 - Bet history component with win/loss tracking
@@ -37,7 +78,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced mobile responsiveness
 - Refined risk calculation algorithm
 
-## [0.2.0] - 2023-03-01
+## [0.2.0] - 2024-03-01
 
 ### Added
 - Light and dark theme support
@@ -49,22 +90,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Switched to Tailwind CSS from plain CSS
 - Updated color scheme for better contrast
 
-## [0.1.0] - 2023-02-15
+## [0.1.0] - 2024-02-15
 
 ### Added
 - Project initialization
 - Basic React setup with TypeScript
 - Initial UI design concepts
-- Core betting mechanics prototype
-
-## [1.1.0] - 2024-03-18
-
-### Added
-- Initial GitHub repository setup at https://github.com/hpkushal/Risk-Reward-Simulator.git
-- Complete project structure with React components and TypeScript
-- Comprehensive documentation including developer guide and product specifications
-
-### Changed
-- Updated project dependencies to latest versions
-- Enhanced documentation with detailed component descriptions
-- Improved code organization and structure 
+- Core betting mechanics prototype 

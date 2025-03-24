@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useGame } from '../context/GameContext';
+import { useGame } from '../../context/GameContext';
 
 const Header: React.FC = () => {
   const { balance } = useGame();

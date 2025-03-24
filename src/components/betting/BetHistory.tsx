@@ -1,6 +1,6 @@
 import React from 'react';
-import { useGame, BetHistory as BetHistoryType } from '../context/GameContext';
-import { useTheme } from '../context/ThemeContext';
+import { useGame, BetHistory as BetHistoryType } from '../../context/GameContext';
+import { useTheme } from '../../context/ThemeContext';
 
 const BetHistory: React.FC = () => {
   const { betHistory } = useGame();
