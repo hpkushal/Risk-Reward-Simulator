@@ -107,6 +107,7 @@ module.exports = {
         'spin-slow': 'spin 3s linear infinite',
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'bounce-light': 'bounce 1s ease-in-out 2',
+        'bounce-once': 'bounce 1s ease-in-out 1',
         'wiggle': 'wiggle 1s ease-in-out 1',
         'slide-in': 'slideIn 0.3s ease-out',
         'slide-up': 'slideUp 0.3s ease-out',
