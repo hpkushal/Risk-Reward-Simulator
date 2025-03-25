@@ -6,8 +6,7 @@ import { ToastProvider } from './context/ToastContext';
 import { GameProvider } from './context/GameContext';
 import Dashboard from './pages/Dashboard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Analytics from './pages/Analytics';
-import Journey from './pages/Journey';
+import Insights from './pages/Insights';
 
 function App() {
   return (
@@ -18,8 +17,7 @@ function App() {
             <Router>
               <Routes>
                 <Route path="/" element={<Dashboard />} />
-                <Route path="/analytics" element={<Analytics />} />
-                <Route path="/journey" element={<Journey />} />
+                <Route path="/insights" element={<Insights />} />
               </Routes>
             </Router>
           </GameProvider>

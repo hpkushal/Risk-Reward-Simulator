@@ -160,44 +160,41 @@ As users' risk levels change, their persona shifts automatically, providing a ne
 
 ### Analytics Features
 
-#### Pattern Recognition
+#### Unified Insights Page
 
-The Pattern Recognition component detects potentially problematic gambling patterns such as:
+The Insights page provides a comprehensive view of the user's betting journey and performance:
 
-- **Chasing Losses**: Increasing bet sizes after losses
-- **High-Risk Betting**: Consistently choosing high-risk options
-- **Rapid Betting**: Placing bets too frequently without adequate consideration
-- **Martingale Strategy**: Doubling bet amounts after losses
-- **Large Stakes**: Betting excessively large percentages of bankroll
-- **Post-Win Overconfidence**: Taking greater risks after winning
-- **Extended Loss Streaks**: Continuing to bet despite consecutive losses
+1. **Journey Overview**
+   - Interactive timeline of betting history
+   - Key milestones and achievements
+   - Balance progression visualization
+   - Persona changes over time
 
-Warnings are categorized by severity (high, medium, low) and include actionable recommendations.
+2. **Performance Analytics**
+   - Win rate and profit/loss metrics
+   - Risk level trends
+   - Betting pattern analysis
+   - Event preference tracking
 
-#### Predictive Analytics
+3. **Behavioral Insights**
+   - Pattern recognition for potentially problematic gambling behaviors
+   - Risk-taking tendencies
+   - Betting frequency analysis
+   - Bankroll management assessment
 
-The Predictive Analytics component forecasts future outcomes based on current betting patterns:
+4. **Predictive Analytics**
+   - Balance projections based on current trends
+   - Win rate forecasts
+   - Bankruptcy risk assessment
+   - Personalized recommendations
 
-- **Balance Projections**: Estimated future balance after a selected number of bets
-- **Win Rate Projections**: Predicted success rate based on current trends
-- **Bankruptcy Risk Assessment**: Evaluation of potential for significant bankroll depletion
-- **Personalized Recommendations**: Specific advice based on projected outcomes
+5. **Goal Tracking**
+   - Progress towards $10,000 target
+   - Responsible gambling goals
+   - Session limits and break reminders
+   - Bankroll management targets
 
-Users can adjust the projection period (10, 25, or 50 bets) to see different time horizons.
-
-#### Goal Setting
-
-The Goal Setting component allows users to set and track responsible gambling targets:
-
-- **Maximum Bet Size**: Setting limits on bet size as a percentage of bankroll
-- **Session Time Limits**: Establishing maximum duration for betting sessions
-- **Daily Bet Limits**: Restricting the number of bets placed per day
-- **Average Risk Level**: Setting targets for overall risk exposure
-- **Break Frequency**: Establishing how often to take breaks between bets
-- **Profit Targets**: Setting goals for when to stop after winning
-- **Loss Limits**: Setting thresholds for stopping after losses
-
-Progress towards goals is tracked visually and updated based on betting behavior.
+The Insights page combines all analytics features into a single, intuitive interface that helps users understand their betting journey and make informed decisions.
 
 ## Future Roadmap
 

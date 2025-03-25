@@ -5,6 +5,27 @@ All notable changes to the Virtual Bet Simulator project will be documented in t
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.2] - 2024-03-25
+
+### Added
+- Unified Insights page combining Analytics and Journey features
+- Dynamic narrative content based on betting history
+- Smooth transitions between story and analytics views
+- Enhanced user experience with progressive disclosure of information
+
+### Changed
+- Merged Analytics and Journey pages into a single Insights page
+- Updated navigation to reflect new unified structure
+- Improved component organization and code reusability
+- Fixed TypeScript linter warnings across analytics components
+- Removed unused imports and variables
+- Enhanced type safety in analytics components
+
+### Fixed
+- Unused variable warnings in analytics components
+- Type definition issues in BetForm component
+- Import optimization across the application
+
 ## [1.2.1] - 2024-03-25
 
 ### Changed

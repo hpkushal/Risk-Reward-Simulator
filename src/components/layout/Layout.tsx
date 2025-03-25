@@ -29,24 +29,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 Dashboard
               </Link>
               <Link 
-                to="/journey" 
+                to="/insights" 
                 className={`px-3 py-2 rounded-md transition ${
-                  location.pathname === '/journey' 
+                  location.pathname === '/insights' 
                     ? isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-900' 
                     : isDarkMode ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                Your Journey
-              </Link>
-              <Link 
-                to="/analytics" 
-                className={`px-3 py-2 rounded-md transition ${
-                  location.pathname === '/analytics' 
-                    ? isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-900' 
-                    : isDarkMode ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                Analytics
+                Insights
               </Link>
             </nav>
             <button
