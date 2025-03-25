@@ -5,6 +5,13 @@ All notable changes to the Virtual Bet Simulator project will be documented in t
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.1] - 2024-03-25
+
+### Changed
+- Migrated repository from GitHub to Bitbucket
+- Updated documentation to reflect new repository location
+- Updated installation and contribution guidelines
+
 ## [1.2.0] - 2024-03-24
 
 ### Added

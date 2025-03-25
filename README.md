@@ -1,7 +1,7 @@
 # Virtual Bet Simulator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.2.0-green.svg)](https://github.com/hpkushal/Risk-Reward-Simulator/releases)
+[![Version](https://img.shields.io/badge/version-1.2.0-green.svg)](https://bitbucket.publishing.tools/projects/SD/repos/risk-reward-simulator/browse)
 
 A browser-based gambling simulation platform that provides a risk-free environment for experiencing betting mechanics without real money. The simulator starts users with $1,000 in virtual currency and challenges them to reach $10,000 while avoiding bankruptcy.
 
@@ -70,8 +70,8 @@ A browser-based gambling simulation platform that provides a risk-free environme
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/hpkushal/Risk-Reward-Simulator.git
-   cd Risk-Reward-Simulator
+   git clone ssh://git@bitbucket.publishing.tools:7999/sd/risk-reward-simulator.git
+   cd risk-reward-simulator
    ```
 
 2. Install dependencies:
@@ -121,103 +121,3 @@ The compiled assets will be available in the `build` directory.
 Risk percentage is calculated using a weighted formula considering:
 
 ```
-Risk % = (Bet Size Factor × 50) +
-         (Event Probability Factor × 30) +
-         (Loss Impact Factor × 20)
-```
-
-Where:
-- Bet Size Factor = Bet Amount / Current Balance
-- Event Probability Factor = 1 - Event Win Probability
-- Loss Impact Factor = Potential Loss / Current Balance
-
-### Personas
-
-Your risk level determines which persona you embody:
-
-| Persona | Risk Range | Strategy | Max Bet |
-|---------|------------|----------|---------|
-| Baby Betsy | 0-30% | Conservative | 10% of balance |
-| Midlife Crisis Mike | 31-70% | Balanced | 30% of balance |
-| YOLO Yolanda | 71-100% | Aggressive | 100% of balance |
-
-### Betting Events
-
-| Event | Multiplier | Win Chance | Risk Level | Min Bet |
-|-------|------------|------------|------------|---------|
-| Coin Flip | 2.0x | 50% | Low | $10 |
-| Dice Roll | 6.0x | 16.6% | Medium | $50 |
-| Bullseye | 3.0x | 33% | Low | $30 |
-| Roulette | 35.0x | 2.7% | High | $100 |
-| Stock Market | 10.0x | 10% | Medium | $200 |
-| Lottery | 1000.0x | 0.1% | High | $1 |
-
-### Analytics Features
-
-The Analytics dashboard includes several features to help you understand your betting behavior:
-
-- **Pattern Recognition** - Detects problematic patterns such as chasing losses, high-risk betting, and rapid betting frequency
-- **Predictive Analytics** - Projects future outcomes based on your current betting patterns
-- **Goal Setting** - Set personalized responsible gambling goals and track your progress
-- **Comparative Analytics** - Compare your behavior to responsible gambling benchmarks
-- **Behavioral Analysis** - Analyzes your betting habits including time patterns and risk preferences
-- **Financial Metrics** - Tracks your wins, losses, and overall financial performance
-
-## 🏗️ Architecture
-
-### Tech Stack
-
-- **Frontend**: React with TypeScript
-- **Styling**: Tailwind CSS
-- **State Management**: React Context API
-- **Build Tools**: Create React App
-
-### Project Structure
-
-```
-virtual-bet-simulator/
-├── public/               # Static assets
-├── src/                  # Source files
-│   ├── components/       # Reusable UI components
-│   │   ├── analytics/    # Analytics-related components
-│   │   ├── betting/      # Betting-related components
-│   │   ├── common/       # Common/shared components
-│   │   ├── layout/       # Layout components
-│   │   └── ui/           # UI primitive components
-│   ├── context/          # React Context providers
-│   ├── pages/            # Page components
-│   └── utils/            # Utility functions
-│       ├── betting.ts    # Betting-related calculations
-│       ├── constants.ts  # Application constants
-│       ├── formatter.ts  # Formatting utilities
-│       ├── index.ts      # Utility exports
-│       └── validation.ts # Form validation utilities
-├── docs/                 # Documentation
-└── README.md             # Project overview
-```
-
-## 📚 Documentation
-
-For more detailed information, see the [documentation](docs/):
-
-- [Developer Guide](docs/developers/README.md) - Setup, architecture, and code guidelines
-- [Product Specifications](docs/product/README.md) - Features, requirements, and roadmap
-- [Changelog](docs/CHANGELOG.md) - Version history and updates
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## ⚠️ Disclaimer
-
-This application is designed for educational and entertainment purposes only. It does not involve real money and is not intended to promote gambling activities. The simulator provides a safe environment to understand risk management and probability without financial consequences.

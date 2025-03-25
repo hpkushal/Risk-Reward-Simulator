@@ -28,8 +28,8 @@ Version: 1.2.0 (Latest)
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/hpkushal/Risk-Reward-Simulator.git
-   cd Risk-Reward-Simulator
+   git clone ssh://git@bitbucket.publishing.tools:7999/sd/risk-reward-simulator.git
+   cd risk-reward-simulator
    ```
 
 2. Install dependencies:
