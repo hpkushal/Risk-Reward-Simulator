@@ -1,14 +1,18 @@
 # Risk Reward Simulator
 
-A browser-based application that simulates betting experiences without real money, providing users with a risk-free environment to understand betting mechanics, risk management, and probability concepts through an engaging, gamified interface.
+A sophisticated browser-based application that simulates betting experiences without real money, providing users with a risk-free environment to understand betting mechanics, risk management, and probability concepts through an engaging, gamified interface.
 
 ## Features
 
 - **Virtual Currency System**: Start with $1,000 virtual currency and aim to reach $10,000
-- **Risk Management System**: Dynamic risk meter with comprehensive risk calculation
+- **Advanced Risk Management System**: Dynamic risk meter with sophisticated risk calculations including Value at Risk (VaR)
 - **Persona System**: Different betting personalities with unique strategies
-- **Various Betting Events**: From simple coin flips to complex market simulations
-- **Unified Insights Dashboard**: Comprehensive analytics and performance tracking
+- **Various Betting Events**: Multiple betting events with different risk-reward profiles
+- **Comprehensive Analytics Dashboard**: In-depth analytics including predictive projections, pattern recognition, and behavioral analysis
+
+## Live Demo
+
+[View the live demo](https://risk-reward-simulator.vercel.app)
 
 ## Getting Started
 
@@ -21,7 +25,7 @@ A browser-based application that simulates betting experiences without real mone
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/hpkushal/Risk-Reward-Simulator.git
+git clone https://github.com/yourusername/Risk-Reward-Simulator.git
 ```
 
 2. Navigate to the project directory:
@@ -43,27 +47,82 @@ npm start
 yarn start
 ```
 
+5. Build for production:
+```bash
+npm run build
+# or
+yarn build
+```
+
 ## Technology Stack
 
-- React
-- TypeScript
-- Tailwind CSS
-- Context API for state management
+- **React 19**: For building the user interface
+- **TypeScript**: For type safety and better developer experience
+- **Tailwind CSS**: For styling components
+- **React Context API**: For state management
+- **React Router**: For routing
+- **Framer Motion**: For animations
+- **Howler/use-sound**: For sound effects
+- **canvas-confetti**: For visual effects
 
 ## Project Structure
 
 ```
 src/
-├── components/
-│   ├── analytics/     # Analytics components
-│   ├── betting/       # Betting related components
-│   └── common/        # Shared components
-├── contexts/          # React Context providers
-├── hooks/            # Custom React hooks
-├── pages/            # Page components
-├── types/            # TypeScript type definitions
-└── utils/            # Utility functions
+├── components/              # React components
+│   ├── analytics/           # Analytics components
+│   │   ├── BehavioralAnalysis.tsx
+│   │   ├── BettingPatterns.tsx
+│   │   ├── ComparativeAnalytics.tsx
+│   │   ├── FinancialMetrics.tsx
+│   │   ├── PatternRecognition.tsx
+│   │   └── PredictiveAnalytics.tsx
+│   ├── betting/             # Betting components
+│   ├── common/              # Common/shared components
+│   ├── layout/              # Layout components
+│   └── ui/                  # UI components
+├── context/                 # React context providers
+│   ├── GameContext.tsx      # Main game logic and state
+│   ├── SoundContext.tsx     # Sound management
+│   ├── ThemeContext.tsx     # Theme management
+│   └── ToastContext.tsx     # Toast notifications
+├── hooks/                   # Custom React hooks
+├── pages/                   # Page components
+│   ├── Dashboard.tsx        # Main game screen
+│   └── Insights.tsx         # Analytics dashboard
+├── types/                   # TypeScript type definitions
+├── utils/                   # Utility functions
+├── App.tsx                  # Root component
+└── index.tsx                # Entry point
 ```
+
+## Core Concepts
+
+### Game Mechanics
+
+The Risk Reward Simulator is built around several key concepts:
+
+1. **Risk Management**: Each bet has a calculated risk percentage based on:
+   - Bet size relative to balance (50% weight)
+   - Event probability (30% weight)
+   - Potential loss impact (20% weight)
+
+2. **Persona System**: Risk level determines which betting persona the user embodies:
+   - Baby Betsy (0-30% risk): Conservative approach with small bets
+   - Midlife Crisis Mike (31-70% risk): Balanced approach with moderate risk
+   - YOLO Yolanda (71-100% risk): Aggressive approach with high-risk bets
+
+3. **Predictive Analytics**: Advanced risk assessment using:
+   - Monte Carlo simulations for future projections
+   - Value at Risk (VaR) calculations
+   - Balance volatility analysis
+   - Betting pattern recognition
+
+### Technical Implementation
+
+- **Context-based State Management**: All game state managed through React Context
+- **Component-based Architecture**: Modular design with clean separation of concerns
+- **Responsive Design**: Mobile-friendly UI using Tailwind CSS
 
 ## Contributing
 
@@ -76,3 +135,8 @@ src/
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Inspired by behavioral finance and risk management concepts
+- Educational tool for understanding probability and risk assessment
